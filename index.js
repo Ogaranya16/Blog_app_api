@@ -30,7 +30,7 @@ app.use("/api/home", homeRoute)
 app.use("/api/draft", draftRoute)
 
 
-const PORT = process.env.PORT ||5000
+const PORT = process.env.PORT || 5000
 
 // app.get('/', (req, res) => res.send ('home'));
 // app.get('/users', {verifyToken},(req, res)=> res.send('user'))

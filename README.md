@@ -42,11 +42,11 @@ Route: /signup
 Method: POST
 Body:
 {
-  "email": "doe@example.com",
-  "password": "Password1",
-  "firstname": "jon",
-  "lastname": "doe",
-  "username": 'jon_doe",
+  "email": "lilmsbush@example.com",
+  "password": "******",
+  "firstname": "Tochi",
+  "lastname": "Offiah",
+  "username": "Msbush",
 }
 Responses
 Success
@@ -54,11 +54,11 @@ Success
 {
     message: 'Signup successful',
     user: {
-        "email": "doe@example.com",
-        "password": "Password1",
-        "firstname": "jon",
-        "lastname": "doe",
-        "username": 'jon_doe",
+        "email": "lilmsbush@example.com",
+        "password": "******",
+        "firstname": "Tochi",
+        "lastname": "Offiah",
+        "username": 'Msbush",
     }
 }
 Login User
@@ -66,8 +66,8 @@ Route: /login
 Method: POST
 Body:
 {
-  "password": "Password1",
-  "username": 'jon_doe",
+  "password": "******",
+  "username": "Msbush",
 }
 Responses
 Success
