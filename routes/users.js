@@ -4,6 +4,7 @@ const {verifyToken} = require('../middleware/checkAuth')
 const Article = require("../models/Article")
 const User = require("../models/User")
 const bcrypt = require("bcrypt")
+const bcryptjs = require('bcryptjs')
 
 
 
