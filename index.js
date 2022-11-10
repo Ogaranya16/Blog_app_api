@@ -31,9 +31,7 @@ app.use("/api/articles", articleRoute)
 app.use("/api/home", homeRoute)
 app.use("/api/draft", draftRoute)
 
-
-
-// app.get('/', (req, res) => res.send ('home'));
+app.get('/', (req, res) => res.send ('home'));
 // app.get('/users', {verifyToken},(req, res)=> res.send('user'))
 // app.useauthRoute
 
