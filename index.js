@@ -1,3 +1,5 @@
+
+const PORT = process.env.PORT || 5000
 const express = require('express')
 const app = express()
 const dotenv = require('dotenv')
@@ -9,7 +11,7 @@ const cors = require('cors')
 
 
 
-////
+////Routes for handling Request
 const authRoute = require("./routes/auth")
 const userRoute = require("./routes/users")
 const articleRoute = require("./routes/articles")
@@ -30,7 +32,6 @@ app.use("/api/home", homeRoute)
 app.use("/api/draft", draftRoute)
 
 
-const PORT = process.env.PORT || 5000
 
 // app.get('/', (req, res) => res.send ('home'));
 // app.get('/users', {verifyToken},(req, res)=> res.send('user'))
