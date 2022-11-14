@@ -12,11 +12,11 @@ const cors = require('cors')
 
 
 ////Routes for handling Request
-const authRoute = require("./api/routes/auth")
-const userRoute = require("./api/routes/users")
-const articleRoute = require("./api/routes/articles")
-const homeRoute = require("./api/routes/home")
-const draftRoute = require("./api/routes/draft")
+const authRoute = require("./routes/auth")
+const userRoute = require("./routes/users")
+const articleRoute = require("./routes/articles")
+const homeRoute = require("./routes/home")
+const draftRoute = require("./routes/draft")
 
 
 
