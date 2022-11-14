@@ -32,9 +32,37 @@ app.use("/api/home", homeRoute)
 app.use("/api/draft", draftRoute)
 
 
-//app.get('/', (req, res) => res.send ('home'));
-// app.get('/users', {verifyToken},(req, res)=> res.send('user'))
-// app.useauthRoute
+app.get('/', (req, res) =>{
+    res.status(200).json({
+        "title": "The Masters",
+        "description": " Body of Music",
+        "author": "Chris Harris",
+        "username": "C.Harris",
+        "state": "Published",
+        "readcount": 1,
+        "readingtime": "",
+        "tags": [
+            "Music",
+            "Arts",
+            "Masters"
+        ],
+        "body": "Sit molestiae voluptates qui internos repellat quo dolor dicta. Est dolorem dignissimos ad voluptatem ducimus ut molestiae dolores et natus quaerat rem libero quod est quisquam natus ea expedita nesciunt. Sit reprehenderit expedita nam inventore autem vel dolores molestias rem alias impedit sit galisum dignissimos?",
+
+        "title": "On the Dance Floor",
+        "description": " Dancing",
+        "author": "Alex Porter",
+        "username": "Aporter",
+        "state": "Published",
+        "readcount": 1,
+        "readingtime": "0",
+        "tags": [
+            "Music",
+            "Lifestyle",
+            "Arts"
+        ],
+        "body": "Sit molestiae voluptates qui internos repellat quo dolor dicta. Est dolorem dignissimos ad voluptatem ducimus ut molestiae dolores et natus quaerat rem libero quod est quisquam natus ea expedita nesciunt. Sit reprehenderit expedita nam inventore autem vel dolores molestias rem alias impedit sit galisum dignissimos?",
+    })
+})
 
 
 app.listen(PORT, () => {
